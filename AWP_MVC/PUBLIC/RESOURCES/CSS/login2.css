@@ -1,0 +1,65 @@
+
+	body {
+		width: 100%;
+		height: calc(100%);
+	}
+
+	main#main {
+		width: 100%;
+		height: calc(100%);
+		background: white;
+	}
+
+	#login-right {
+		position: absolute;
+		right: 0;
+		width: 35%;
+		height: calc(100%);
+		background: white;
+		display: flex;
+		align-items: center;
+	}
+
+
+	#login-left {
+		position: absolute;
+		left: 0;
+		width: 65%;
+		height: calc(100%);
+		display: flex;
+		align-items: center;
+		background: url(AWP_MVC\PUBLIC\RESOURCES\IMAGES\logo.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#login-left::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	#login-right .card {
+		margin: auto;
+		z-index: 1;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	}
+
+	#login-right img {
+		max-width: 100px;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	div#login-right::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(100%);
+		height: calc(100%);
+	}

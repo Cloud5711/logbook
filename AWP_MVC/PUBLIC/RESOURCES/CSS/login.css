@@ -1,0 +1,158 @@
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#f5f5f5;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.login-container {
+  width: 450px;
+  height: 500px;
+  padding: 20px;
+  background: linear-gradient(145deg, #fff, #fff);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+}
+
+input[type=text],
+input[type=password] {
+  width: 95%;
+  padding: 12px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+button {
+  width: 15%;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(145deg, #04AA6D, #04855e);
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+  margin: 20px;
+}
+.button-container{
+justify-content: center;
+
+
+}
+button:hover {
+  background: linear-gradient(145deg, #04855e, #046748);
+}
+
+
+.button-psw.psw {
+  margin-top: 10px;
+}
+.error-modal {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hide the error modal */
+  z-index: 1; /* Ensure it appears above other content */
+  opacity: 0; /* Start with 0 opacity */
+  animation: fadeIn 0.2s ease-in-out forwards;
+   /* Smooth fade-in transition */
+  /* Add other styling properties as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.error-box {
+  margin: auto;
+  background: linear-gradient(145deg, #fff, #fff);
+  border: 1px solid #f8f5f5;
+  padding: 10px;
+  text-align: center;
+  color: #130103;
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  width: 100%;
+  max-width: 400px;
+  z-index: 20;
+  border-radius: 5px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 5s ease-in-out forwards;
+  animation: fadeOut 10s ease-in-out forwards;
+  .error-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Initially hide the error modal */
+  z-index: 1; /* Ensure it appears above other content */
+  /* Add other styling properties as needed */
+}
+
+}
+
+
+
+
+.ok-button {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.6s;
+}
+
+.ok-button:hover {
+  background-color: #218838;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10%, 90% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

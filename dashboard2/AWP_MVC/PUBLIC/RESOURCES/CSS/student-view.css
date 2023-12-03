@@ -1,0 +1,48 @@
+
+th {
+    position: sticky;
+    top: 0;
+    color: #5E7C2A;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 2px;
+}
+
+#visitor-container {
+    float: center;
+    margin-top: 20px;
+}
+
+#visitor-name {
+    font-size: 5px;
+}
+
+#visitor-profile img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+    float: left; /* Updated to float left */
+}
+
+#attendance-table-container {
+    margin-bottom: 30px;
+    padding-right: 10px;
+}
+
+.clearfix::after {
+    clear: both;
+    display: table;
+    margin-top: 20%;
+}
+
